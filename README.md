@@ -69,7 +69,7 @@ Or if you want to disable multiple lines, you can do something like this:
 # TODO
 [^TOC](#table-of-contents)
 
-- [ ] Refactor regular expressions to match the placeholders.
+- [ ] Refactor the way how to match single- and multi-line placeholders.
 - [ ] Support more badges.
 - [ ] Support more license types.
  
