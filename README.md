@@ -46,7 +46,7 @@ The script supports per default the following placeholders and consumes informat
 # Conditional checks
 [^TOC](#table-of-contents)
 
-It's possible to include/exclude parts of the README if the placeholder doesn't match a pattern. At the moment, it's limited to its existence. To disable the **Node version badge** if `engines.node` is missing in the `package.json`, you can do something like this:
+It's possible to include/exclude parts of the README if the placeholder doesn't match a pattern. At the moment, it's limited to its existence. To disable the **Node version badge** if `engines.node` is missing in the `package.json`, you can do this:
 ```
 {{ IF:NODE_VERSION }}![Node version](https://img.shields.io/badge/Node%20version-{{ NODE_VERSION }}-blue){{ END-IF }}
 ```
