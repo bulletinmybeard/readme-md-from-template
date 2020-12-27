@@ -2,7 +2,7 @@
 ![App version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 # readme-md-from-template
-The readme.md-from-template script creates and updates a `README.md` file from templates such as `README.tpl.md`. Placeholders within the README template are being parsed and replaced with content from the `package.json` as well as custom PLACEHOLDERS  you can define within the script.
+The readme.md-from-template script creates and updates a `README.md` file from templates such as `README.tpl.md`. Placeholders within the README template are being parsed and replaced with content from the `package.json`.
 
 # Table of contents
 - [Arguments](#script-arguments)
