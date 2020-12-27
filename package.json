@@ -1,0 +1,27 @@
+{
+  "name": "readme-md-from-template",
+  "version": "1.0.0",
+  "description": "The readme.md-from-template script creates and updates a README.md file from templates such as README.tpl.md. Placeholders within the README template are being parsed and replaced with content from the package.json as well as custom PLACEHOLDERS you can define within the script.",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bulletinmybeard/readme-md-creator.git"
+  },
+  "keywords": [],
+  "author": "Robin Schulz<hello@rschu.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bulletinmybeard/readme-md-creator/issues"
+  },
+  "homepage": "https://github.com/bulletinmybeard/readme-md-creator",
+  "devDependencies": {
+    "@types/node": "^14.14.16"
+  },
+  "engines": {
+    "node": "14.15.1"
+  },
+  "dependencies": {}
+}

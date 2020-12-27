@@ -1,0 +1,12 @@
+node_modules
+.tmp
+*.log
+*.pid
+npm-debug.log
+*~
+*#
+.DS_STORE
+.idea
+.node_history
+.env
+files/*
