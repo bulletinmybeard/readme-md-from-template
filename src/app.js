@@ -200,7 +200,6 @@ const QUESTION = {
     }
 
     const replacements = {
-        PACKAGE_MANAGER_RUN: 'npm run',
         PACKAGE_LIST: getFirstLevelPackageInfo(packageFile, true),
     };
 

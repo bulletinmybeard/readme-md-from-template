@@ -6,6 +6,7 @@ The readme.md-from-template script creates and updates a `README.md` file from t
 
 # Table of contents
 - [Arguments](#script-arguments)
+- [Placeholders](#placeholders)
 - [References](#references)
 - [TODO](#todo)
 
@@ -27,6 +28,18 @@ node \
     --package=../package.json \
     --force=true
 ```
+# Placeholders
+[^TOC](#table-of-contents)
+The script supports per default the following placeholders and consumes information from the `package.json`.
+
+| Placeholder | |
+|:----------|:------|
+| `APP_VERSION` | `version` |
+| `APP_NAME` | `name` |
+| `APP_DESCRIPTION` | `description` |
+| `APP_LICENSE` | `license` |
+| `PACKAGE_LIST` | List of all first-level Node packages |
+| `NODE_VERSION` | `engines.node` |
 
 # References
 [^TOC](#table-of-contents)
@@ -38,4 +51,6 @@ node \
 [^TOC](#table-of-contents)
 
 - [ ] Refactor regular expressions to match the placeholders.
+- [ ] Support more badges.
+- [ ] Support more license types.
  
