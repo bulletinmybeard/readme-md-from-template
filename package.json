@@ -1,7 +1,7 @@
 {
   "name": "readme-md-from-template",
   "version": "1.0.0",
-  "description": "The readme.md-from-template script creates and updates a README.md file from templates such as README.tpl.md. Placeholders within the README template are being parsed and replaced with content from the package.json as well as custom PLACEHOLDERS you can define within the script.",
+  "description": "The readme.md-from-template script creates and updates a README.md file from templates such as README.tpl.md. Placeholders within the README template are being parsed and replaced with content from the package.json. It's possible to extend the default placeholders with custom ones and add conditional checks to exclude parts of the README if certain placeholders don't exist.",
   "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
