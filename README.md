@@ -7,6 +7,7 @@ The readme.md-from-template script creates and updates a `README.md` file from t
 # Table of contents
 - [Arguments](#script-arguments)
 - [Placeholders](#placeholders)
+- [Conditional checks](#conditional-checks)
 - [References](#references)
 - [TODO](#todo)
 
@@ -30,16 +31,32 @@ node \
 ```
 # Placeholders
 [^TOC](#table-of-contents)
-The script supports per default the following placeholders and consumes information from the `package.json`.
+The script supports per default the following placeholders and consumes information from the `package.json` for those. Those placeholder identifiers are uppercase and wrapped in curly brackets (e.g., `{{ APP_VERSION }}`).
 
 | Placeholder | |
 |:----------|:------|
-| `APP_VERSION` | `version` |
+| `{{ APP_VERSION }}` | `version` |
 | `APP_NAME` | `name` |
 | `APP_DESCRIPTION` | `description` |
 | `APP_LICENSE` | `license` |
 | `PACKAGE_LIST` | List of all first-level Node packages |
 | `NODE_VERSION` | `engines.node` |
+
+# Conditional checks
+[^TOC](#table-of-contents)
+It's possible to include/exclude parts of the README if the placeholder doesn't match a pattern. At the moment, it's limited to its existence. To disable the **Node version badge** if `engines.node` is missing in the `package.json`, you can do something like this:
+```
+{{ IF:NODE_VERSION }}![Node version](https://img.shields.io/badge/Node%20version-{{ NODE_VERSION }}-blue){{ END-IF }}
+```
+Or if you want to disable multiple lines, you can do something like this:
+```
+{{ IF:PACKAGE_LIST }}
+# Packages
+| Name | Version | Description | Website |
+|:----------|:-------------|:------|:------|
+{{ PACKAGE_LIST }}
+{{ END-IF }}
+```
 
 # References
 [^TOC](#table-of-contents)
