@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/bulletinmybeard/readme-md-creator.git"
   },
-  "keywords": [],
+  "keywords": [
+      "node.js",
+      "markdown",
+      "readme",
+      "template"
+  ],
   "author": "Robin Schulz<hello@rschu.me>",
   "license": "MIT",
   "bugs": {
